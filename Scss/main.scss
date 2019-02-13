@@ -1,0 +1,135 @@
+// import
+@import 'colors';
+@import 'fonts';
+
+// common styles
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+
+}
+
+header {
+    
+}
+
+
+.header-container {
+    background-image: url(../img/header/header-bg.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-height: 1057px;
+//    @media screen and (min-width: 600px) {
+//        min-height: 1057px; 
+//    }
+}
+
+
+
+
+// beginning of header-row-1
+.header-row-1 {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+}
+
+.header-nav {
+    ul {
+        display: flex;
+        font-family: 'Montserrat', sans-serif;
+        
+        
+        a {
+            color: $headline-color;
+            font-weight: 600;
+            font-size: 14px;
+            margin: 0 15px;
+            transition: .3s;
+            outline-color: $contrast-color;
+            
+            &:hover,
+            &:focus {
+                color: $contrast-color;
+                transition: .3s;
+            }
+        }
+        
+    }
+}
+
+//  end of header-row-1
+
+
+// beginning of header-row-2
+
+.header-row-2 {
+    display: block;
+    margin-top: 300px;
+    
+    
+    h1 {
+        color: $headline-color;
+        font-size: 48px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        max-width: 510px;
+    }
+    
+    h2 {
+        color: $headline-color;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+        margin: 25px 0 65px 0;
+        
+    }
+    
+    a {
+        background: $contrast-color;
+        border-radius: 10px;
+        color: $white;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: bold;
+        padding: 25px 40px;
+        transition: .4s;
+        outline: none;
+        
+        &:hover,
+        &:focus {
+            background: $white;
+            color: $contrast-color;
+            transition: .4s;
+        }
+        
+    }
+}
+// end of header-row-2
+
+// end of header
+
+
+// beginning of main
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
