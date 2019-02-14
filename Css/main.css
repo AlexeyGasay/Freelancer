@@ -6,6 +6,34 @@
   text-decoration: none;
 }
 
+.contrast-point {
+  color: #fa5c65;
+}
+
+.move-arrow {
+  color: #fa5c65;
+  border-radius: 5px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  outline: none;
+  padding: 5px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+.move-arrow:focus {
+  background: #fa5c65;
+  color: #fff;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+.move-arrow:hover ~ img, .move-arrow:focus ~ img {
+  -webkit-transform: translate(10px, 0);
+          transform: translate(10px, 0);
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
 .header-container {
   background-image: url(../img/header/header-bg.jpg);
   background-size: contain;
@@ -82,4 +110,55 @@
   color: #fa5c65;
   -webkit-transition: .4s;
   transition: .4s;
+}
+
+.our-advantages {
+  padding: 90px 0 0 0;
+}
+
+.advantage h3 {
+  color: #314a5b;
+  font-size: 26px;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 25px;
+}
+.advantage p {
+  color: #9aa0ab;
+  font-family: 'Open Sans';
+  font-size: 15px;
+  margin: 25px 0;
+}
+.advantage img {
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.portfolio {
+  margin: 100px auto 0 auto;
+}
+.portfolio .macbook {
+  width: 100%;
+  height: auto;
+  max-width: 350px;
+}
+
+.portfolio-info h2 {
+  color: #314a5b;
+  font-family: 'Montserrat';
+  font-size: 40px;
+}
+.portfolio-info h3 {
+  color: #314a5b;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+}
+.portfolio-info p {
+  color: #9aa0ab;
+  font-size: 15px;
+  font-family: 'Open Sans', sans-serif;
+  margin: 30px 0 40px 0;
+}
+.portfolio-info a {
+  -webkit-transition: .2s;
+  transition: .2s;
 }

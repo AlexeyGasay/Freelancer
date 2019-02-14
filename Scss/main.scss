@@ -11,10 +11,32 @@
 
 }
 
-header {
-    
+.contrast-point {
+    color: $contrast-color;
 }
 
+.move-arrow {
+    color: $contrast-color;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    outline: none;
+    padding: 5px;
+    transition: .3s;
+    
+        &:focus {
+            background: $contrast-color;
+            color: $white;
+            transition: .3s;
+        }
+        
+        &:hover ~ img,
+        &:focus ~ img {
+            transform: translate(10px, 0);
+            transition: .5s;
+        }
+}// /move-arrov
 
 .header-container {
     background-image: url(../img/header/header-bg.jpg);
@@ -114,11 +136,79 @@ header {
 
 // beginning of main
 
+.our-advantages {
+    padding: 90px 0 0 0;
+}
+
+.advantage {
+    
+    h3 {
+        color: $headline-color;
+        font-size: 26px;
+        font-family: 'Montserrat', sans-serif;
+        line-height: 25px;
+    }
+    
+    p {
+        color: $text-color;
+        font-family: 'Open Sans';
+        font-size: 15px;   
+        margin: 25px 0;
+    }
+    
+    img {
+        transition: .5s;
+    }
+    
+    
+}
+
+// end of our-advanges
 
 
 
+// beginning of portfolio
 
 
+.portfolio {
+    margin: 100px auto 0 auto;
+    
+    .macbook {
+        width: 100%;
+        height: auto;
+        max-width: 350px;
+    }
+    
+}
+
+.portfolio-info {
+    
+    h2 {
+        color: $headline-color;
+        font-family: 'Montserrat';
+        font-size: 40px;  
+    }
+    
+    h3 {
+        color: $headline-color;
+        font-size: 16px;
+        font-family: 'Open Sans', sans-serif;
+//        margin: 0 0 30px 0;
+    }
+    
+    p {
+        color: $text-color;
+        font-size: 15px;
+        font-family: 'Open Sans', sans-serif;
+        margin: 30px 0 40px 0;
+            
+    }
+    
+    a {
+        transition: .2s;
+    }
+    
+}
 
 
 
