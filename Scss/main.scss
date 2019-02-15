@@ -57,6 +57,22 @@
     justify-content: space-between;
     align-content: center;
     align-items: center;
+    
+    
+    
+    .logo {
+        outline: none;
+        transition: .3s;
+    
+        
+        &:hover,
+        &:focus {
+            border-bottom: 2px solid $contrast-color;
+            padding-bottom: 5px;
+            transition: .3s;
+        }
+    }
+    
 }
 
 .header-nav {
@@ -204,11 +220,158 @@
             
     }
     
-    a {
-        transition: .2s;
+    .arrow {
+        transition: .5s;
+    }
+
+    
+}
+
+// end of portfolio
+
+
+.our-team {
+    margin-top: 100px;
+}
+
+.our-team-title {
+    
+    h2 {
+        color: $headline-color;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 32px;
+    }
+    
+    h3 {
+        color: $text-color;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        
     }
     
 }
+
+
+.all-member {
+    margin-top: 45px;
+    
+    img {
+        transition: .5s;
+    }
+
+    .team-more-link {
+        margin-top: 60px;
+        text-align: right;
+        
+    }
+    
+}
+
+.member {
+    display: flex;
+    
+    
+    .col {
+        padding: 0 5px;
+    }
+    
+    
+    img {
+        height: auto;
+        max-width: 120px;
+        width: 100%;
+    }
+    
+    h3 {
+        color: $headline-color;
+        font-family: 'Montserrat';
+        font-size: 22px;
+        margin-bottom: 5px;
+    }
+    
+    h4 {
+        color: $contrast-color;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 14px;
+        margin-bottom: 5px;
+        
+    }
+    
+    p {
+        color: $text-color;
+        font-size: 14px;
+        font-family: 'Open Sans', sans-serif;
+        width: 100%;
+    }
+
+}// /member
+
+
+// end of main 
+
+
+
+// beginning of footer
+
+
+.footer {
+    border-top: 1px solid $text-color;
+    height: 90px;
+    margin-top: 60px;
+}
+
+.footer-row {
+    color: $text-color;
+    font-family: 'Open Sans', sans-serif;
+    padding: 30px 0 30px 0;
+    
+    ul {
+        align-content: flex-start;
+        display: flex;
+        
+        a {
+            margin: 0 10px;  
+            outline: none;
+            transition: .3s;
+            
+            &:hover,
+            &:focus {
+                border-bottom: 4px solid $contrast-color;
+                transition: .2s;
+                
+            }
+            
+        }
+    }
+    
+    h4 {
+        font-weight: 400;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
