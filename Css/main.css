@@ -34,11 +34,33 @@
   transition: .5s;
 }
 
+.container {
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+@media screen and (max-width: 1400px) {
+  .container {
+    width: 100%;
+    padding: 0 100px;
+    -webkit-transition: .5s;
+    transition: .5s;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .container {
+    width: 100%;
+    padding: 0 50px;
+    -webkit-transition: .5s;
+    transition: .5s;
+  }
+}
+
 .header-container {
   background-image: url(../img/header/header-bg.jpg);
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
-  min-height: 1057px;
+  min-height: 450px;
+  max-height: 970px;
 }
 
 .header-row-1 {
@@ -54,16 +76,22 @@
       -ms-flex-align: center;
           align-items: center;
 }
-.header-row-1 .logo {
+.header-row-1 .logo-link {
   outline: none;
   -webkit-transition: .3s;
   transition: .3s;
+  width: 100%;
+  height: auto;
 }
-.header-row-1 .logo:hover, .header-row-1 .logo:focus {
+.header-row-1 .logo-link:hover, .header-row-1 .logo-link:focus {
   border-bottom: 2px solid #fa5c65;
   padding-bottom: 5px;
   -webkit-transition: .3s;
   transition: .3s;
+}
+.header-row-1 .logo-link .logo {
+  width: 100%;
+  height: auto;
 }
 
 .header-nav ul {
@@ -89,7 +117,7 @@
 
 .header-row-2 {
   display: block;
-  margin-top: 300px;
+  margin: 100px auto 40px auto;
 }
 .header-row-2 h1 {
   color: #314a5b;
@@ -97,6 +125,8 @@
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   max-width: 510px;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 .header-row-2 h2 {
   color: #314a5b;
@@ -104,6 +134,8 @@
   font-size: 20px;
   font-weight: 400;
   margin: 25px 0 65px 0;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 .header-row-2 a {
   background: #fa5c65;
@@ -123,8 +155,49 @@
   transition: .4s;
 }
 
+@media screen and (max-width: 992px) {
+  .header-row-1 .logo-box {
+    margin: 0 auto 20px auto;
+  }
+  .header-row-1 .main-nav {
+    margin: 0 auto;
+  }
+}
+
+.header-row-2 {
+  -webkit-transition: .7s;
+  transition: .7s;
+}
+@media screen and (min-width: 1100px) {
+  .header-row-2 {
+    margin: 250px auto 40px auto;
+    -webkit-transition: .7s;
+    transition: .7s;
+  }
+}
+@media screen and (max-width: 992px) {
+  .header-row-2 h1 {
+    font-size: 30px;
+  }
+  .header-row-2 h2 {
+    font-size: 15px;
+  }
+  .header-row-2 a {
+    padding: 15px 20px;
+  }
+}
+
 .our-advantages {
   padding: 90px 0 0 0;
+}
+@media screen and (max-width: 768px) {
+  .our-advantages .advantage-1, .our-advantages .advantage-2 {
+    min-width: 50%;
+  }
+  .our-advantages .advantage-3 {
+    min-width: 60%;
+    margin: 20px  auto 0 auto;
+  }
 }
 
 .advantage h3 {
@@ -143,6 +216,11 @@
   -webkit-transition: .5s;
   transition: .5s;
 }
+@media screen and (max-width: 992px) {
+  .advantage h3 {
+    font-size: 20px;
+  }
+}
 
 .portfolio {
   margin: 100px auto 0 auto;
@@ -153,6 +231,10 @@
   max-width: 350px;
 }
 
+.portfolio-info {
+  -webkit-transition: .5s;
+  transition: .5s;
+}
 .portfolio-info h2 {
   color: #314a5b;
   font-family: 'Montserrat';
@@ -173,6 +255,17 @@
   -webkit-transition: .5s;
   transition: .5s;
 }
+@media screen and (max-width: 992px) {
+  .portfolio-info h2 {
+    font-size: 25px;
+  }
+  .portfolio-info h3 {
+    font-size: 14px;
+  }
+  .portfolio-info p {
+    font-size: 14px;
+  }
+}
 
 .our-team {
   margin-top: 100px;
@@ -182,12 +275,16 @@
   color: #314a5b;
   font-family: 'Montserrat', sans-serif;
   font-size: 32px;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 .our-team-title h3 {
   color: #9aa0ab;
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   font-weight: 400;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 .all-member {
@@ -206,6 +303,8 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 .member .col {
   padding: 0 5px;
@@ -234,6 +333,41 @@
   width: 100%;
 }
 
+@media screen and (max-width: 992px) {
+  .our-team-title h2 {
+    font-size: 25px;
+  }
+  .our-team-title h3 {
+    font-size: 14px;
+  }
+
+  .member img {
+    max-width: 90px;
+  }
+  .member h3 {
+    font-size: 18px;
+  }
+  .member p {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .member img {
+    max-width: 80px;
+  }
+
+  .member-1, member-2 {
+    min-width: 50%;
+  }
+  .member-1 p, member-2 p {
+    min-width: 100%;
+  }
+
+  .member-3 {
+    margin: 20px  auto 0 auto;
+    min-width: 60%;
+  }
+}
 .footer {
   border-top: 1px solid #9aa0ab;
   height: 90px;
