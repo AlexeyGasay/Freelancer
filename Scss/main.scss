@@ -53,6 +53,10 @@
         transition: .5s;
     }
     
+    @media screen and (max-width: 540px) {
+        padding: 0 15px;
+    }
+    
 }
 
 
@@ -69,6 +73,11 @@
     
     @media screen and (min-width: 992px) {
         min-height: 850px; 
+    }
+    
+    @media screen and (max-width: 540px) {
+        background-size: contain;
+        
     }
 }
 
@@ -106,10 +115,33 @@
 }
 
 .header-nav {
+    
+    .switch {
+        background-color: $contrast-color;
+        border-radius: 10px;
+        color: $white;
+        font-weight: 600;
+        font-family: 'Montserrat';
+        padding: 10px 50px;
+        transition: .5s;
+        visibility: hidden;
+        
+        &:active, 
+        &:hover,
+        &:focus {
+            background-color: $white;
+            color: $contrast-color;
+            transition: .5s;
+        }
+    }
+    
     ul {
         display: flex;
         font-family: 'Montserrat', sans-serif;
         
+        span {
+            display: flex;
+        }
         
         a {
             color: $headline-color;
@@ -128,6 +160,14 @@
         
     }
 }
+
+
+.menu-switch:checked ~ nav ul {
+        opacity: 1;
+        transition: 1s;
+        margin: 10px auto 0 auto;
+    }
+
 
 //  end of header-row-1
 
@@ -183,12 +223,6 @@
 
 // beginning of adaptive style for header 
 
-header {
-//    @media screen and (min-width: 992px) {
-//        min-height: 1000px; 
-//    }
-}
-
 .header-row-1 {
     @media screen and (max-width: 992px) {
         .logo-box {
@@ -198,6 +232,49 @@ header {
         
         .main-nav {
             margin: 0 auto;
+        }
+    }
+    
+    @media screen and (max-width: 540px) {
+
+        display: block;
+        
+        .logo-box {
+            justify-content: center;
+            text-align: center;
+            
+            img {
+                max-height: 60px;
+                max-width: 100px;
+            }
+        }
+        
+        .switch {
+            visibility: visible;
+        }
+                
+        nav {
+            text-align: center;
+
+            
+            span {
+                display: flex;
+                justify-content: center;
+                li {
+                    margin: 0 5px;
+                }
+            }
+            
+        }
+        
+        .header-nav ul {
+            display: block;
+            transition: 1s;
+            opacity: 0;
+            
+            li {
+                margin: 7px 0;
+            }
         }
     }
     
@@ -226,6 +303,15 @@ header {
             padding: 15px 20px;
         }
     }
+    
+    @media screen and (max-width: 768px) {
+        margin: 150px auto 20px auto;
+        padding-bottom: 40px;
+    }
+    
+    @media screen and (max-width: 540px) {
+        margin: 20px auto;
+    }
         
 }// /header-row-2
 
@@ -233,6 +319,7 @@ header {
 
 
 // end of header
+
 
 
 
@@ -251,6 +338,12 @@ header {
         .advantage-3 {
             min-width: 60%;
             margin: 20px  auto 0 auto;
+        }
+    }
+    
+    @media screen and (max-width: 576px) {
+        .advantage {
+            min-width: 100%;
         }
     }
 }
@@ -284,6 +377,10 @@ header {
         h3 {
             font-size: 20px;
         } 
+    }
+    
+    @media screen and (max-width: 576px) {
+            margin: 30px auto;
     }
 
 
@@ -353,11 +450,22 @@ header {
             font-size: 14px;
         }
     }
+    
 
     
-// end of adaptive styles for portfolio
 
 }
+@media screen and (max-width: 576px) {
+    .mac {
+        visibility: hidden;
+    }
+    
+    .portfolio-info {
+        min-width: 100%;
+    }
+}
+
+// end of adaptive styles for portfolio
 
 // end of portfolio
 
@@ -500,8 +608,14 @@ header {
         min-width: 60%;
         
     }
-}
+}// /768px
 
+@media screen and (max-width: 576px) {
+    .member {
+        min-width: 100%;
+        margin: 20px auto;
+    }
+}
 
 
 // beginning of styles for our-team
